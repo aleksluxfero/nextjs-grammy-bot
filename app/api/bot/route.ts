@@ -1,5 +1,3 @@
-import {NextRequest} from "next/server";
-
 export const dynamic = 'force-dynamic'
 
 export const fetchCache = 'force-no-store'
@@ -23,7 +21,7 @@ export const POST = webhookCallback(bot, 'std/http')
 
 export const GET = async () => {
   // Assuming you have the user's chat ID stored somewhere
-  const userChatId = '<USER_CHAT_ID>'; // Replace with the actual chat ID
+  const userChatId = 5780121436; // Replace with the actual chat ID
 
   // Send a message to the user
   await bot.api.sendMessage(userChatId, 'Сообщение отправлено через GET запрос.');
