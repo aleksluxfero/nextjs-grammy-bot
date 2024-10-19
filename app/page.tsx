@@ -1,5 +1,4 @@
 import Image from "next/image";
-import "@/bot";
 
 export default function Home() {
   return (
