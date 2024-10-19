@@ -19,7 +19,6 @@ async function setWebhook() {
     console.error("Ошибка при установке вебхука:", err);
   }
 }
-
 // Вызовите установку вебхука
 setWebhook();
 
