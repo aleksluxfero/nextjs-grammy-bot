@@ -1,7 +1,7 @@
 import { Bot } from 'grammy';
 
 const botToken: string = process.env.TELEGRAM_BOT_TOKEN ?? '';
-const domain: string = process.env.DOMAIN ?? '';
+const domain = process.env.VERCEL_URL || 'http://localhost:3000';
 
 const bot = new Bot(botToken);
 
