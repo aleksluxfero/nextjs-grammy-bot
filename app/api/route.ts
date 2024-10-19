@@ -1,4 +1,4 @@
-import bot from '../../../bot';
+import bot from "@/bot";
 import {NextRequest} from "next/server";
 
 export async function GET() {
