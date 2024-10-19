@@ -13,6 +13,7 @@ bot.on('message', (ctx) => {
 // Установите вебхук (делается один раз при запуске приложения)
 async function setWebhook() {
   try {
+    await bot.init();
     await bot.api.setWebhook("https://" + domain + '/api');
     console.log("Webhook установлен!");
   } catch (err) {
